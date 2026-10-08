@@ -23,3 +23,8 @@ with CI/CD that regenerates and validates the configs on every change.
 
 ## Week 5
 Called the GitHub REST API from Python to read my repo and create an issue.
+
+## Week 6
+Built an IP address plan checker using Python and YAML to validate VLANs, subnets, gateways, and host requirements. Containerized the checker with Docker and automated testing with GitHub Actions. Used the GitHub REST API to automatically create an issue when errors were detected, then fixed all four errors through a pull request and achieved passing CI checks.
+
+Repository: https://github.com/jeffrey-hanson1/ip-plan-check
