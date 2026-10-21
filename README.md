@@ -29,7 +29,7 @@ Built an IP address plan checker using Python and YAML to validate VLANs, subnet
 
 Repository: https://github.com/jeffrey-hanson1/ip-plan-check
 
-## Week 8: OSPF by Hand, Then Automated
+## Week 8:
 
 **What I did:** This week, I used Cisco Modeling Labs (CML) to configure OSPF manually on two routers. After verifying that the routers could communicate, I ran an Ansible playbook that automated the loopback and OSPF configurations. I also created my own backup.yaml playbook to back up the running configurations from both routers and save them in a backups folder.
 
