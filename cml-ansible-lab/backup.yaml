@@ -1,0 +1,26 @@
+---
+- name: Back up Cisco router configurations
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Create backups directory
+      ansible.builtin.file:
+        path: /home/cisco/backups
+        state: directory
+        mode: '0755'
+      delegate_to: localhost
+      run_once: true
+
+    - name: Get running configuration
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register: router_config
+
+    - name: Save router configuration
+      ansible.builtin.copy:
+        content: "{{ router_config.stdout[0] }}"
+        dest: "/home/cisco/backups/{{ inventory_hostname }}.cfg"
+        mode: '0644'
+      delegate_to: localhost
