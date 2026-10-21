@@ -28,3 +28,9 @@ Called the GitHub REST API from Python to read my repo and create an issue.
 Built an IP address plan checker using Python and YAML to validate VLANs, subnets, gateways, and host requirements. Containerized the checker with Docker and automated testing with GitHub Actions. Used the GitHub REST API to automatically create an issue when errors were detected, then fixed all four errors through a pull request and achieved passing CI checks.
 
 Repository: https://github.com/jeffrey-hanson1/ip-plan-check
+
+## Week 8: OSPF by Hand, Then Automated
+
+**What I did:** This week, I used Cisco Modeling Labs (CML) to configure OSPF manually on two routers. After verifying that the routers could communicate, I ran an Ansible playbook that automated the loopback and OSPF configurations. I also created my own backup.yaml playbook to back up the running configurations from both routers and save them in a backups folder.
+
+**What I learned:** I learned how OSPF allows routers to communicate and share routing information with each other. I also learned how Ansible can automate configurations instead of having to enter commands manually on each router. This lab helped me better understand how automation can save time, reduce mistakes, and make managing multiple network devices easier. I also got more experience troubleshooting SSH connections and working with GitHub.
