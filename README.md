@@ -34,3 +34,13 @@ Repository: https://github.com/jeffrey-hanson1/ip-plan-check
 **What I did:** This week, I used Cisco Modeling Labs (CML) to configure OSPF manually on two routers. After verifying that the routers could communicate, I ran an Ansible playbook that automated the loopback and OSPF configurations. I also created my own backup.yaml playbook to back up the running configurations from both routers and save them in a backups folder.
 
 **What I learned:** I learned how OSPF allows routers to communicate and share routing information with each other. I also learned how Ansible can automate configurations instead of having to enter commands manually on each router. This lab helped me better understand how automation can save time, reduce mistakes, and make managing multiple network devices easier. I also got more experience troubleshooting SSH connections and working with GitHub.
+
+## Week 9 – Build a Network and Automate It End to End
+
+In Week 9, I built a network in Cisco Modeling Labs (CML) using two routers, one switch, and an Ubuntu Ansible control node.
+
+I configured management IP addresses and SSH access, then created four Ansible playbooks to automate loopback interfaces, EIGRP routing, login banners, and configuration backups.
+
+I verified EIGRP neighbor connectivity, successfully pinged between router loopbacks, and confirmed Ansible idempotency with `changed=0` on a second run.
+
+**Week 9 GitHub Repository:** https://github.com/jeffrey-hanson1/cnit381-week9
