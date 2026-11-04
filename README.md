@@ -44,3 +44,13 @@ I configured management IP addresses and SSH access, then created four Ansible p
 I verified EIGRP neighbor connectivity, successfully pinged between router loopbacks, and confirmed Ansible idempotency with `changed=0` on a second run.
 
 **Week 9 GitHub Repository:** https://github.com/jeffrey-hanson1/cnit381-week9
+
+## Week 10 - Ansible with CSR1000v
+
+In Week 10, I used the DEVASC Ubuntu virtual machine and Ansible to automate tasks on a Cisco CSR1000v router in VirtualBox.
+
+I configured SSH connectivity and created an Ansible playbook to automatically back up the router's running configuration. I then created a second playbook to configure IPv6 addressing on GigabitEthernet1.
+
+I verified the IPv6 configuration using `show ipv6 interface brief` and confirmed that both playbooks executed successfully without any failed tasks.
+
+**Week 10 GitHub Repository:** https://github.com/jeffrey-hanson1/cnit381-week10
