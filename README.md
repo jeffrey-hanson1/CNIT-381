@@ -54,3 +54,17 @@ I configured SSH connectivity and created an Ansible playbook to automatically b
 I verified the IPv6 configuration using `show ipv6 interface brief` and confirmed that both playbooks executed successfully without any failed tasks.
 
 **Week 10 GitHub Repository:** https://github.com/jeffrey-hanson1/cnit381-week10
+
+
+## Week 11 - RESTCONF Network Automation
+
+In Week 11, I used the DEVASC Ubuntu virtual machine, Postman, and Python to automate network management tasks on a Cisco Catalyst 3650 switch using RESTCONF.
+
+I configured network connectivity between the virtual machine and switch, verified RESTCONF access, and used Postman to send GET requests to retrieve interface information.
+
+I then used a RESTCONF PUT request to create Loopback1 with the IPv4 address `10.1.1.1/24`. I verified the configuration using a GET request and received successful HTTP responses.
+
+Finally, I created a Python script using the `requests` library to retrieve switch interface configurations automatically. I also used an environment variable to keep the switch password out of the source code.
+
+**Week 11 GitHub Repository:** https://github.com/jeffrey-hanson1/cnit381-week11 
+
